@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+}
+
+/* :root {
+    --bg-color: #001;
+    --second-b: #112;
+    --text-color: #fff;
+} */
+
+/* html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 40px;
+    background-color: crimson;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+} */
+
+/* section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+} */
+
+/* header section start */
+header {
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 9%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all .3s ease;
+}
+
+
+.logo a {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.logo a span {
+    color: crimson !important;
+    transition: all .3s ease;
+}
+
+/* color not work */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    line-height: normal;
+    overflow: visible;
+}
+
+button span {
+    color: #fff;
+}
+
+.menu li {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+li>a>button {
+    position: relative;
+    display: grid;
+    place-content: center;
+    grid-template-areas: 'stack';
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+li>a>button>span {
+    transition: all 300ms ease-in-out;
+    grid-area: stack;
+}
+
+li>a>button>span:last-of-type {
+    margin-top: 0.25rem;
+    transform: scale(0);
+    transition-delay: 0ms;
+    border-radius: 50%;
+}
+
+li>a>button:focus-visible>span:first-of-type,
+li>a>button:hover>span:first-of-type {
+    transform: scale(0);
+}
+li>a>button:focus-visible>span:last-of-type,
+li>a>button:hover>span:last-of-type {
+    transform: scale(1);
+    color: crimson;
+}
