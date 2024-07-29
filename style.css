@@ -10,16 +10,16 @@
     font-family: -apple-system, sans-serif;
 }
 
-/* :root {
+:root {
     --bg-color: #001;
     --second-b: #112;
     --text-color: #fff;
-} */
+}
 
 /* html {
     font-size: 62.5%;
     overflow: hidden;
-}
+} */
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -33,12 +33,12 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-} */
+} 
 
-/* section {
+section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-} */
+}
 
 /* header section start */
 header {
@@ -105,6 +105,10 @@ button span {
     color: #fff;
 }
 
+.menu a {
+    font-size: 1.5rem;
+}
+
 li>a>button {
     position: relative;
     display: grid;
@@ -131,8 +135,98 @@ li>a>button:focus-visible>span:first-of-type,
 li>a>button:hover>span:first-of-type {
     transform: scale(0);
 }
+
 li>a>button:focus-visible>span:last-of-type,
 li>a>button:hover>span:last-of-type {
     transform: scale(1);
     color: crimson;
 }
+
+.menu-btn {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* home section */
+.home {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.home_img img {
+    width: 25vw;
+    margin-left: 100px;
+    border: 3px solid crimson;
+    border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+    animation: borderAnimation 5s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+    }
+
+    35% {
+        border-radius: 60% 40% 57% 43% / 40% 54% 46% 60%;
+}
+    65% {
+        border-radius: 67% 33% 68% 32% / 27% 70% 30% 73%;
+}
+    100% {
+        border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+}
+}
+
+.home .featured_text{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    min-height: 50vh;
+    margin-bottom: -200px;
+    flex-direction: column;
+    width: 60%;
+}
+
+.featured_text .hello{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.featured-name{
+    font-size: 50px;
+    font-weight: 600;
+    color: crimson;
+    margin-block: 20px;
+    margin-bottom: 10px;
+}
+#SliderValue{
+    display: flex;
+    font-family: sans-serif;
+    color: crimson;
+    font-size: 70px;
+    font-weight: 600;
+}
+.start{
+    opacity: 0;
+}
+.animation{
+    animation: fade .3s forwards;
+    -webkit-animation: fade .3s forwards;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+        transform:translateY(20px);
+}
+100%{
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+/* 24 minutes */
