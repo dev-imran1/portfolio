@@ -282,30 +282,35 @@ li>a>button:hover>span:last-of-type {
 }
 
 /* about section */
-.about{
+.about {
     background-color: #111;
 }
-.about-container{
+
+.about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20rem;
 }
-.title_h1{
+
+.title_h1 {
     color: #fff;
     margin-bottom: 1.1rem;
     position: relative;
     display: inline-block;
     font-size: 3.5rem;
 }
-.about p{
+
+.about p {
     color: #fff;
     margin: 1.5rem 0;
     font-size: 20px;
 }
-.about_social{
+
+.about_social {
     margin-bottom: 20px;
 }
-.about_social i{
+
+.about_social i {
     color: crimson;
     font-size: 16px;
     background-color: transparent;
@@ -318,11 +323,12 @@ li>a>button:hover>span:last-of-type {
     border: 1.5px solid crimson;
     transition: 0.5s;
 }
-.about_social i:hover{
+
+.about_social i:hover {
     transform: scale(1.5);
 }
 
-.btn-b{
+.btn-b {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -332,31 +338,34 @@ li>a>button:hover>span:last-of-type {
     padding: 10px 30px;
     border-radius: 6px;
     border: 2px solid crimson;
-    transition:all 0.3s ease;
+    transition: all 0.3s ease;
 
 }
-.btn-b:hover{
+
+.btn-b:hover {
     background-color: none !important;
     color: crimson !important;
 }
+
 /* service section */
-.service{
+.service {
     color: #fff;
-    background:#001;
+    background: #001;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-size: 4.5rem;
 }
 
-.service-list{
+.service-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.service-list div{
+
+.service-list div {
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -365,34 +374,39 @@ li>a>button:hover>span:last-of-type {
     transition: background 0.5s, transform 0.5s;
 }
 
-.service-list div i{
+.service-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.service-list div h2{
+
+.service-list div h2 {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 15px;
 }
-.service-list div a{
+
+.service-list div a {
     text-decoration: none;
     color: #fff;
     margin-top: 20px;
     display: inline-block;
 }
-.service-list div:hover{
+
+.service-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
 }
+
 /* protfolio content */
-.portfolio-content{
+.portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 2.3rem;
     margin-top: 4.2rem;
     align-items: center;
 }
-.row{
+
+.row {
     background: var(--second-bg-color);
     border-radius: 28px;
     border: 1px solid transparent;
@@ -400,24 +414,28 @@ li>a>button:hover>span:last-of-type {
     padding: 20px;
     transition: all 0.3s ease;
 }
-.row img{
+
+.row img {
     height: auto;
     width: 100%;
     border-radius: 28px;
     margin-bottom: 1.4rem;
 }
-.main-row{
+
+.main-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.5rem;
 }
-.row h5{
+
+.row h5 {
     font-size: 20px;
     font-weight: 600px;
     color: var(--text-color);
 }
-.row i{
+
+.row i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -428,37 +446,40 @@ li>a>button:hover>span:last-of-type {
     background: crimson;
     color: var(--text-color);
 }
-.row h4{
+
+.row h4 {
     font-style: 25px;
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.4;
 }
-.row:hover{
+
+.row:hover {
     border: 1px solid crimson;
     transform: translateY(-5px) scale(1);
     cursor: pointer;
 }
 
 /* contact section */
-.contact h2{
+.contact h2 {
     margin-bottom: 3rem;
 }
 
-.contact form{
+.contact form {
     max-width: 90rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
 }
-.contact form .input-box{
+
+.contact form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .contact form .input-box input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     padding: 1.5rem;
     font-style: 1.6rem;
@@ -469,16 +490,18 @@ li>a>button:hover>span:last-of-type {
     background: transparent;
     resize: none;
 }
+
 .contact form .input-box input,
-.contact form textarea:hover{
+.contact form textarea:hover {
     border: 1px solid crimson;
 }
 
-.contact form .input-box input{
+.contact form .input-box input {
     width: 45%;
     margin: 0.7rem 0.35rem;
 }
-.contact .btn-text{
+
+.contact .btn-text {
     font-size: 18px;
     margin-top: 2rem;
     display: inline-block;
@@ -498,7 +521,53 @@ li>a>button:hover>span:last-of-type {
     transition: all 0.3s ease;
 }
 
-.contact form .btn-text:hover{
+.contact form .btn-text:hover {
     color: crimson;
     background: none;
 }
+
+/* footer section */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--bg-color);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social a i{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 1rem;
+    margin: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 1px 5px 3px crimson;
+    border-radius: 50%;
+    color: crimson;
+    transition: 0.5s ;
+}
+.footer .social a i:hover{
+    transform: scale(1.5) translateY(-8px);
+    box-shadow: 0 0 20px crimson;
+}
+.footer .copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+/* responsive staet*/
