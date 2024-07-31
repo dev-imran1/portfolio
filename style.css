@@ -540,7 +540,7 @@ li>a>button:hover>span:last-of-type {
     padding-bottom: 25px;
 }
 
-.footer .social a i{
+.footer .social a i {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -554,13 +554,15 @@ li>a>button:hover>span:last-of-type {
     box-shadow: 0 1px 5px 3px crimson;
     border-radius: 50%;
     color: crimson;
-    transition: 0.5s ;
+    transition: 0.5s;
 }
-.footer .social a i:hover{
+
+.footer .social a i:hover {
     transform: scale(1.5) translateY(-8px);
     box-shadow: 0 0 20px crimson;
 }
-.footer .copyright{
+
+.footer .copyright {
     margin-top: 20px;
     text-align: center;
     font-size: 16px;
@@ -571,3 +573,212 @@ li>a>button:hover>span:last-of-type {
 
 
 /* responsive staet*/
+@media (max-width:1285px) {
+    html {
+        font-size: 55%;
+    }
+
+    .title_h1 {
+        font-size: 25px;
+    }
+
+    .about-container {
+        grid-template-columns: auto;
+    }
+}
+/* 
+@media(max-width:991px) {
+    header {
+        padding: 3rem;
+    }
+
+    section {
+        padding: 5rem 10% 2rem;
+    }
+
+    .footer {
+        padding: 2 rem 3%;
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .menu {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .menu.activer{
+        left: 0;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+} */
+/* @media(max-width:786px) {
+
+    section {
+        padding: 5rem 10% 2rem;
+    }
+    .home_img img{
+        display: none;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+} */
+
+/* Default styles for larger screens */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .menu {
+        display: none; /* Hide the menu on small screens */
+    }
+
+    .menu-btn {
+        display: block; /* Show the menu button on small screens */
+    }
+
+    .home_img img {
+        width: 60vw; /* Adjust the image size for small screens */
+        margin-left: 20px;
+        display: none;
+    }
+
+    .home .featured_text {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr; /* Stack the columns on small screens */
+        gap: 2rem;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr; /* Stack the columns on small screens */
+        gap: 2rem;
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr; /* Stack the columns on small screens */
+        gap: 2rem;
+    }
+
+    .contact form .input-box input {
+        width: 100%; /* Full width input fields on small screens */
+    }
+
+    .contact form .input-box textarea {
+        width: 100%; /* Full width textarea on small screens */
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 992px) {
+    .menu {
+        display: flex; /* Show the menu on tablets */
+    }
+
+    .menu-btn {
+        display: none; /* Hide the menu button on tablets */
+    }
+
+    .home_img img {
+        width: 40vw; /* Adjust the image size for tablets */
+        margin-left: 50px;
+        display: none;
+    }
+
+    .home .featured_text {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr; /* Stack the columns on tablets */
+        gap: 5rem;
+    }
+
+    .service-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        gap: 2rem;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        gap: 2rem;
+    }
+
+    .contact form .input-box input {
+        width: 48%; /* Adjust input field width on tablets */
+        margin: 0.5rem 1%;
+    }
+
+    .contact form .input-box textarea {
+        width: 100%; /* Full width textarea on tablets */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 993px) {
+    .menu {
+        display: flex; /* Show the menu on desktops */
+    }
+
+    .menu-btn {
+        display: none; /* Hide the menu button on desktops */
+    }
+
+    .home_img img {
+        width: 25vw; /* Adjust the image size for desktops */
+        margin-left: 100px;
+    }
+
+    .home .featured_text {
+        width: 60%;
+        margin-bottom: -200px;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on desktops */
+        gap: 20rem;
+    }
+
+    .service-list {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on desktops */
+        gap: 4rem;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on desktops */
+        gap: 4rem;
+    }
+
+    .contact form .input-box input {
+        width: 45%; /* Adjust input field width on desktops */
+        margin: 0.7rem 0.35rem;
+    }
+
+    .contact form .input-box textarea {
+        width: 100%; /* Full width textarea on desktops */
+    }
+}
+
